@@ -22,25 +22,25 @@ class TestingActivity : AppCompatActivity() {
         val editTextPinCode: EditText = findViewById(R.id.PasswodEditText)
         val buttonPinCode: Button = findViewById(R.id.EnterPinCodeButton)
 
-        var pinCodeHash = getString(R.string.first) + getString(R.string.second)//916291
+        var pinCodeHash = getString(R.string.first) + getString(R.string.second)
 
 
         buttonPinCode.setOnClickListener {
             val pinCode = editTextPinCode.text.toString().trim()
 
             if (pinCode == "") {
-                Toast.makeText(this, "The pin code can't be an empty string!", Toast.LENGTH_LONG)
+                Toast.makeText(this, "The pin code can't be an empty string!!!", Toast.LENGTH_LONG)
                     .show()
             }
 
             if (CryptoHelper.getMD5Hash(pinCode)!=pinCodeHash)
             {
-                Toast.makeText(this, "The pin code doesn't match!", Toast.LENGTH_LONG)
+                Toast.makeText(this, "The pin code doesn't match!!!", Toast.LENGTH_LONG)
                     .show()
             }
             else
             {
-                Toast.makeText(this, "Welcome Tester!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Welcome Tester!!!", Toast.LENGTH_LONG).show()
                 val key = CryptoHelper.generateAESKey(pinCode)
                 val decrypted = CryptoHelper.decrypt(getString(R.string.encryptValue),key)
 
