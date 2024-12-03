@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ctfApp</string>
+    <string name="title_activity_testing">TestingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name ="second">20b6969c61515261e</string>
+    <string name ="first">f6aee59b2812e31</string>
+    <string name ="encryptValue">TvN6jNG1XqJjRYia:LS98+tEn2HTNuLoFVgXrQozItn8EeCx8htSRsrIV/yVHJEd7aU+mUzSKewQ8q26hcf2+Aisvlyg=</string>
+</resources>
